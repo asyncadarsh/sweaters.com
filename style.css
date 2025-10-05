@@ -1,0 +1,206 @@
+  @font-face {
+    font-family: hel;
+    src: url(./fonts/HelveticaNowDisplay-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: thin;
+    src: url(./fonts/HelveticaNowDisplay-Thin.ttf);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: hel;
+  }
+
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+  }
+
+  #main {
+    height: 100%;
+    width: 100%;
+    /* background-color: #F5F5F5; */
+    background-color: #f9eaea;
+  }
+
+  #nav {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+  }
+
+  #nav a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    font-size: 17px;
+  }
+
+  #nav h1 {
+    font-weight: 100;
+  }
+
+  #hero h1 {
+    font-size: 350px;
+    font-weight: 100;
+    padding-left: 40px;
+  }
+  #btmbar {
+    width: 280px;
+    font-family: thin;
+    padding-left: 70px;
+  }
+
+  #btmbar h3 {
+    font-size: 20px;
+    font-weight: 600;
+
+  }
+
+  #btmbar p {
+    font-size: 15px;
+    font-weight: 100;
+  }
+
+  #btm2 {
+    margin-top: 15px;
+  }
+
+  #footer {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-style: italic;
+  }
+
+  #images img {
+    /* height: 100px; */
+    background-size: cover;
+    border-radius: 10px;
+    object-fit: cover;
+
+  }
+
+  #first {
+    position: absolute;
+    right: 42%;
+    top: 60%;
+    height: 250px;
+    width: 200px;
+    z-index: 0;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  #first:hover {
+    /* scale: 1.05; */
+    transform: scale(1.05);
+    z-index: 9;
+  }
+
+  #second {
+    position: absolute;
+    right: 30%;
+    top: 70%;
+    height: 210px;
+    width: 200px;
+    z-index: 1;
+    transition: transform 0.1s ease-in-out;  
+  }
+
+  #second:hover {
+    /* scale: 1.05; */
+    transform: scale(1.05);
+    z-index: 9;
+  }
+
+  #third {
+    position: absolute;
+    right: 15%;
+    top: 48%;
+    height: 320px;
+    width: 250px;
+    z-index: 2;
+      transition: transform 0.2s ease-in-out;  
+  }
+
+  #third:hover {
+    /* scale: 1.05; */
+    transform: scale(1.05);
+    z-index: 9;
+  }
+
+  #buysection {
+    text-align: center;
+    padding:10px;
+    font-size: 70px;
+    font-family: thin;
+  }
+
+  #buysection:hover {
+    background-color:  rgb(243, 185, 242);
+    color:rgb(7, 7, 7);
+ 
+  }
+
+  #items {
+    height: auto;
+    width: 100%;
+    background-color: #f9eaea;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    padding-left: 38px;
+  }
+
+  #card {
+    height: 540px;
+    width: 340px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform .3s ease-in-out;
+  }
+  #card:hover{
+    transform: scale(1.05);
+  }
+
+  #card img {
+    height: 480px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  #idetails{
+    padding-left:10px ;
+  }
+  #idetails h3{
+    font-size: 20px;
+  }
+  #idetails h4{
+    font-size: 15px;
+    font-family: thin;
+    padding: 2px;
+  }
+  #cardwrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right:10px;
+  }
+  #cardwrapper button{
+    padding: 10px 15px;
+    background-color: salmon;
+    border: none;
+    border-radius: 8px;
+  }
